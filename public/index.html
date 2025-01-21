@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management System</title>
+  <link rel="stylesheet" href="script.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>User Management System</h1>
+    <p>Efficiently manage and visualize user data</p>
+  </header>
+  <main>
+    <!-- Form Section -->
+    <section class="form-section">
+      <h2>Add New User</h2>
+      <form id="userForm">
+        <div class="form-group">
+          <input type="text" name="firstName" placeholder="First Name" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="lastName" placeholder="Last Name" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="mobileNo" placeholder="Mobile Number" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="street" placeholder="Street">
+        </div>
+        <div class="form-group">
+          <input type="text" name="city" placeholder="City">
+        </div>
+        <div class="form-group">
+          <input type="text" name="state" placeholder="State">
+        </div>
+        <div class="form-group">
+          <input type="text" name="country" placeholder="Country">
+        </div>
+        <div class="form-group">
+          <input type="text" name="loginId" placeholder="Login ID" required>
+        </div>
+        <div class="form-group">
+          <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn">Save User</button>
+      </form>
+      <div class="feedback" id="feedback"></div>
+    </section>
+
+    <!-- User Data Section -->
+    <section class="data-section">
+      <h2>All Users</h2>
+      <button id="fetchData" class="btn">Fetch Users</button>
+      <div id="userData"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 User Management System. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
